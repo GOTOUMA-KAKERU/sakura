@@ -1,0 +1,121 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+header{
+  height: 50px;
+  display: flex;
+  box-shadow: #d8d8d8 0px 0px 5px;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+  header h1{
+    margin: 0;
+  }
+  header h1 img{
+    height: 44px;
+    margin: 3px 0 3px 10px;
+    margin-left: 10px;
+  }
+
+  .join{
+    margin: 5px 10px 5px auto;
+    background-color: #0bded7;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-shadow: #e7e7e7 0px 0px 5px;
+  }
+  .join:hover{
+    background-color: #09f1e9;
+  }
+
+  .join a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+  }
+
+.top{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.top div{
+    height: fit-content;
+    margin-top: 35vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top h3{
+  font-size: 2em;
+  color: #e04375;
+  margin: 0;
+  padding: 0;
+
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideIn 1s ease forwards;
+}
+
+.top h2{
+    font-size: 3em;
+    color: #e04375;
+    margin: 0;
+    padding: 0;
+
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s ease forwards;
+}
+.top img{
+    right: 0;
+    width: 300px;
+    height: 300px;
+    margin: calc(45vh - 150px) 5vw;
+    border-radius: 20px;
+
+    transform: translateX(-150px);
+    display: inline-block;
+    animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+    to {
+     opacity: 1;
+     transform: translateY(0);
+     transform: translateX(0);
+   }
+ }
+
+.member h2{
+  text-align: center;
+  font-size: 2em;
+}
+
+.member div{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.m_card{
+  width: 300px;
+  box-shadow: #d5d5d5 0px 0px 10px;
+  border-radius: 20px;
+  padding: 10px;
+  display: block;
+}
+  .m_name{
+    margin: 0;
+    text-align: center;
+  }
+  .m_rool{
+    margin: 0;
+  }
