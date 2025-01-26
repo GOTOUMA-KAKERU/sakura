@@ -94,6 +94,24 @@ header{
    }
  }
 
+
+.news{
+  padding: 20px;
+}
+  .news h2{
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 2em;
+  }
+  .n_box{
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: inset #d5d5d5 0px 0px 10px;
+  }
+  .n_box h3,.n_box p{
+    margin: 0;
+  }
+
 .member h2{
   text-align: center;
   font-size: 2em;
@@ -111,6 +129,8 @@ header{
   border-radius: 20px;
   padding: 10px;
   display: block;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
   .m_name{
     margin: 0;
@@ -118,4 +138,17 @@ header{
   }
   .m_rool{
     margin: 0;
+    background-color: #e7e7e7;
+    border-radius: 0.5em;
+    padding: 0 2px;
+    height: 15px;
+    font-size: 0.5em;
   }
+
+footer{
+  box-shadow: #d5d5d5 0px 0px 10px;
+}
+footer p{
+  margin: 0;
+  text-align: center;
+}
