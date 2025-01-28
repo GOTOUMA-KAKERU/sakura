@@ -99,11 +99,14 @@ header{
   grid-template-columns: 1fr 1fr;
   margin: 20px;
 }
-  .a_perfect div{
+  .about div div{
     height: 300px;
   }
   .about img {
     max-width: 300px;
+  }
+  .about span{
+    color: #e04375;
   }
 
   .a_perfect img{
