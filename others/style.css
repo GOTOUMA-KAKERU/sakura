@@ -114,6 +114,14 @@ header{
     right: 0;
   }
 
+  .a_join{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .a_join a{
+    text-align: center;
+  }
+
 .news{
   padding: 20px;
 }
