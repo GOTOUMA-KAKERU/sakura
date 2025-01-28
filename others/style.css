@@ -94,7 +94,7 @@ header{
    }
  }
 
-.a_perfect{
+.a_perfect,.a_safety,.a_ivent{
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 20px;
@@ -102,7 +102,7 @@ header{
   .a_perfect div{
     height: 300px;
   }
-  .a_perfect img {
+  .about img {
     max-width: 300px;
     position: absolute;
     right: 0;
