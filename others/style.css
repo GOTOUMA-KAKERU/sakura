@@ -104,6 +104,9 @@ header{
   }
   .about img {
     max-width: 300px;
+  }
+
+  .a_perfect img{
     position: absolute;
     right: 0;
   }
