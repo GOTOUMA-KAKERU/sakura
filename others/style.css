@@ -94,6 +94,19 @@ header{
    }
  }
 
+.a_perfect{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px;
+}
+  .a_perfect div{
+    height: 300px;
+  }
+  .a_perfect img {
+    max-width: 300px;
+    position: absolute;
+    right: 0;
+  }
 
 .news{
   padding: 20px;
