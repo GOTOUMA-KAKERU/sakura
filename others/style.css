@@ -115,11 +115,15 @@ header{
   }
 
   .a_join{
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #0bded7;
+    padding: 10px 20vw;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 50px auto;
   }
   .a_join a{
-    text-align: center;
+    text-decoration: none;
+    color: #000;
   }
 
 .news{
