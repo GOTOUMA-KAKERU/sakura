@@ -121,6 +121,9 @@ header{
     width: fit-content;
     margin: 50px auto;
   }
+  .a_join:hover{
+    background-color: #09f1e9;
+  }
   .a_join a{
     text-decoration: none;
     color: #000;
