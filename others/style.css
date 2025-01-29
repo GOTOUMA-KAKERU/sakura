@@ -4,6 +4,19 @@ body,html{
     font-family: serif;
 }
 
+.subtitle{
+  transform: translateX(-300px);
+  animation: subtitle 1s ease forwards;
+  animation-timeline: view();
+}
+
+@keyframes subtitle {
+  to {
+   opacity: 1;
+   transform: translateX(0px);
+ }
+}
+
 header{
   height: 50px;
   display: flex;
@@ -81,7 +94,7 @@ header{
     margin: calc(45vh - 150px) 5vw;
     border-radius: 20px;
 
-    transform: translateX(-150px);
+    transform: translateX(150px);
     display: inline-block;
     animation: slideIn 1s ease forwards;
 }
@@ -185,6 +198,24 @@ footer p{
 }
 
 @media screen and (max-width: 640px) {
+  .top{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 90vh;
+  }
+  .top img{
+    margin: 0px auto;
+    width: 250px;
+    height: 250px;
+
+    
+    transform: translateX(0px);
+    transform: translateY(150px);
+  }
+  .top div{
+    margin: 10vh auto;
+  }
+
   .a_safety{
     flex-direction: column;
   }
