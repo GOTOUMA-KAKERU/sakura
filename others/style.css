@@ -95,23 +95,20 @@ header{
  }
 
 .a_perfect,.a_safety,.a_ivent{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 20px;
+  display: flex;
 }
   .about div div{
     height: 300px;
+    margin: 20px;
+  }
+  .a_perfect,.a_ivent{
+    background-color: #ececec;
   }
   .about img {
     max-width: 300px;
   }
   .about span{
     color: #e04375;
-  }
-
-  .a_perfect img{
-    position: absolute;
-    right: 0;
   }
 
   .a_join{
@@ -185,4 +182,26 @@ footer{
 footer p{
   margin: 0;
   text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .a_safety{
+    flex-direction: column;
+  }
+  .a_perfect,.a_ivent{
+    flex-direction: column-reverse;
+  }
+  
+  .about div div{
+    height: fit-content;
+  }
+  .about div div h2{
+    text-align: center;
+  }
+  .about img{
+    margin: 20px auto 0 auto;
+  }
+  .a_perfect img{
+    margin-right: 0;
+  }
 }
