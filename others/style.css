@@ -205,10 +205,9 @@ footer p{
   }
   .top img{
     margin: 0px auto;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
 
-    
     transform: translateX(0px);
     transform: translateY(150px);
   }
