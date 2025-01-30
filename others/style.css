@@ -148,9 +148,9 @@ header{
     font-size: 2em;
   }
   .n_box{
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 20px;
-    box-shadow: inset #d5d5d5 0px 0px 10px;
+    box-shadow: inset #eaeaea 0px 0px 10px;
   }
   .n_box h3,.n_box p{
     margin: 0;
@@ -169,8 +169,8 @@ header{
 
 .m_card{
   width: 300px;
-  box-shadow: #d5d5d5 0px 0px 10px;
-  border-radius: 20px;
+  box-shadow: #f1f1f1 0px 0px 10px;
+  border-radius: 10px;
   padding: 10px;
   display: block;
   margin-right: 10px;
