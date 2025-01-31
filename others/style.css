@@ -17,6 +17,20 @@ body,html{
  }
 }
 
+.about div div h2{
+  animation: points 1s ease forwards;
+  animation-timeline: view();
+}
+
+@keyframes points{
+  from{
+    opacity: 0;
+  }
+  to {
+   opacity: 1;
+ }
+}
+
 header{
   height: 50px;
   display: flex;
