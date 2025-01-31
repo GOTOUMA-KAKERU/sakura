@@ -133,6 +133,7 @@ header{
   }
   .about img {
     max-width: 300px;
+    max-height: 300px;
   }
   .about span{
     color: #e04375;
