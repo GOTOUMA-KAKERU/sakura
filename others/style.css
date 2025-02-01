@@ -5,7 +5,10 @@ body,html{
 }
 
 .subtitle{
-  transform: translateX(-300px);
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-size: 2em;
+  transform: translateX(-150px);
   animation: subtitle 1s ease forwards;
   animation-timeline: view();
 }
@@ -55,7 +58,7 @@ header{
     background-color: #0bded7;
     border-radius: 10px;
     padding: 5px 10px;
-    box-shadow: #e7e7e7 0px 0px 5px;
+    box-shadow: #c8c8c8 0px 0px 5px;
   }
   .join:hover{
     background-color: #09f1e9;
@@ -64,7 +67,7 @@ header{
   .join a{
     text-decoration: none;
     color: #000;
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
 .top{
@@ -88,7 +91,7 @@ header{
 
   opacity: 0;
   transform: translateY(50px);
-  animation: slideIn 1s ease forwards;
+  animation: slideIn 2s ease forwards;
 }
 
 .top h2{
@@ -99,7 +102,7 @@ header{
 
     opacity: 0;
     transform: translateY(50px);
-    animation: slideIn 1s ease forwards;
+    animation: slideIn 2s ease forwards;
 }
 .top img{
     right: 0;
@@ -110,7 +113,7 @@ header{
 
     transform: translateX(150px);
     display: inline-block;
-    animation: slideIn 1s ease forwards;
+    animation: slideIn 2s ease forwards;
 }
 
 @keyframes slideIn {
@@ -123,12 +126,11 @@ header{
 
 .a_perfect,.a_safety,.a_ivent{
   display: flex;
-  width: 100vw;
 }
   .about div div{
     height: 300px;
     margin: 20px;
-    width: max-content;
+    width: calc(100vw - 40px);
   }
   .a_perfect,.a_ivent{
     background-color: #ececec;
@@ -156,12 +158,14 @@ header{
 
   .a_join{
     background-color: #0bded7;
+    box-shadow: #e7e7e7 0px 0px 10px;
     padding: 10px 20vw;
     border-radius: 10px;
     width: fit-content;
     margin: 50px auto;
   }
   .a_join:hover{
+    box-shadow: #e7e7e7 0px 0px 5px;
     background-color: #09f1e9;
   }
   .a_join a{
@@ -172,11 +176,6 @@ header{
 .news{
   padding: 20px;
 }
-  .news h2{
-    margin: 0 0 20px 0;
-    text-align: center;
-    font-size: 2em;
-  }
   .n_box{
     border-radius: 15px;
     padding: 20px;
@@ -185,11 +184,6 @@ header{
   .n_box h3,.n_box p{
     margin: 0;
   }
-
-.member h2{
-  text-align: center;
-  font-size: 2em;
-}
 
 .member div{
   display: flex;
@@ -218,6 +212,35 @@ header{
     height: 15px;
     font-size: 0.5em;
   }
+  
+  .member_list{
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 70vh;
+    box-shadow: #e7e7e7 0px 0px 10px;
+  }
+
+  table{
+    margin: 0 20px;
+    box-shadow: #efefef 0px 0px 10px;
+  }
+    th{
+      background-color: #f6f6f6;
+      text-align: left;
+      padding: 0.7em;
+    }
+    td{
+      padding: 0.7em;
+    }
+    td small{
+      font-size: 0.7em;
+    }
+  .server_info p{
+    margin-right: 20px;
+    text-align: end;
+    font-size: 0.7em;
+  }
+
 
 footer{
   box-shadow: #d5d5d5 0px 0px 10px;
@@ -263,12 +286,5 @@ footer p{
   }
   .a_perfect img{
     margin-right: 0;
-  }
-
-
-  .member_list{
-    width: 80%;
-    margin: 0 auto;
-    height: 100vh;
   }
 }
