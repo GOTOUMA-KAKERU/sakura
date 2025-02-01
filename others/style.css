@@ -132,9 +132,22 @@ header{
     background-color: #ececec;
   }
   .about img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+    animation: a_img 3s ease forwards;
+    animation-timeline: view();
   }
+
+  @keyframes a_img {
+    to {
+     opacity: 1;
+     max-width: 300px;
+     max-height: 300px;
+     transform: translateX(0px);
+   }
+  }
+
   .about span{
     color: #e04375;
   }
@@ -248,5 +261,12 @@ footer p{
   }
   .a_perfect img{
     margin-right: 0;
+  }
+
+
+  .member_list{
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
   }
 }
