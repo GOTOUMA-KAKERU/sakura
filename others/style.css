@@ -123,10 +123,12 @@ header{
 
 .a_perfect,.a_safety,.a_ivent{
   display: flex;
+  width: 100vw;
 }
   .about div div{
     height: 300px;
     margin: 20px;
+    width: max-content;
   }
   .a_perfect,.a_ivent{
     background-color: #ececec;
@@ -134,7 +136,7 @@ header{
   .about img {
     max-width: 200px;
     max-height: 200px;
-    margin: auto;
+    margin: auto 20px;
     animation: a_img 3s ease forwards;
     animation-timeline: view();
   }
