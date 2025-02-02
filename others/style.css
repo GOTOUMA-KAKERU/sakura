@@ -222,14 +222,14 @@ header{
 
   table{
     margin: 0 20px;
+    width: calc(100% - 40px);
     box-shadow: #efefef 0px 0px 10px;
   }
     th{
       background-color: #f6f6f6;
-      text-align: left;
-      padding: 0.7em;
     }
-    td{
+    th,td{
+      text-align: left;
       padding: 0.7em;
     }
     td small{
@@ -240,7 +240,8 @@ header{
     text-align: end;
     font-size: 0.7em;
   }
-  .links td{
+  .links td a{
+      width: 100%;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
