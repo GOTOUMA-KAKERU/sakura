@@ -213,9 +213,11 @@ header{
     font-size: 0.5em;
   }
   
-  .member_list{
+  .iframe{
     width: 90%;
     margin: 0 auto 20px auto;
+  }
+  .member_list{
     height: 70vh;
     box-shadow: #e7e7e7 0px 0px 10px;
   }
