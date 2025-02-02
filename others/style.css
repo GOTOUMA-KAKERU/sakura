@@ -220,10 +220,16 @@ header{
     box-shadow: #e7e7e7 0px 0px 10px;
   }
 
-  table{
+
+  
+  .table{
+    overflow-x: auto;
     margin: 0 20px;
+  }
+  table{
     width: calc(100% - 40px);
     box-shadow: #efefef 0px 0px 10px;
+    white-space: nowrap;
   }
     th{
       background-color: #f6f6f6;
@@ -240,9 +246,13 @@ header{
     text-align: end;
     font-size: 0.7em;
   }
+  .links h3{
+    margin-left: 20px;
+  }
+  .links th{
+    width: 20px;
+  }
   .links td a{
-      width: 100%;
-      white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
   }
