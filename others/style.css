@@ -256,6 +256,13 @@ header{
       overflow: hidden;
       text-overflow: ellipsis;
   }
+  .more a{
+    text-decoration: none;
+    color: #000;
+  }
+  .more:hover{
+    background-color: #efefef;
+  }
 
 
 footer{
