@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
         <title>さくら雑談王国</title>
         <link rel="icon" href="./others/sakura.gif">
+        <meta name=”description“ content=“Discord雑談鯖「さくら雑談王国」の公式サイトです。お知らせの告知や、各種お問い合わせも受け付けております。“ />
         <!--css-->
         <link rel="stylesheet" href="./others/style.css">
     </head>
@@ -332,12 +333,19 @@
             <div class="con_cards">
                 <div class="con_card">
                     <h3 id="" class="con_card_h3">鯖名</h3>
-                    <div class="con_card_more"><button>詳しく</button></div>
+                    <div class="con_card_more"><button onclick="con_detail(this);" class="con_card_btn" id="aaa">詳しく</button></div>
                 </div>
             </div>
         </div>
 
-        <!--ここから連携鯖の情報を映すHTML要素　普段は隠れていてjavascriptでclass付けてみせている-->
+        <!--ここから連携鯖の情報を映すHTML要素　javascriptでjson読んでみせている-->
+        <div id="contact_server_background">
+            <div id="contact_server_info">
+                <h3 id="contact_server_name"></h3>
+                <p id="contact_server_about"></p>
+                <div><a id="contact_server_link" href=""></a></div>
+            </div>
+        </div>
 
         <div class="contact">
             <div class="iframe">
@@ -348,5 +356,6 @@
         <footer>
             <p>2025 ©kakeru</p>
         </footer>
+        <script src="./others/script.js"></script>
     </body>
 </html>

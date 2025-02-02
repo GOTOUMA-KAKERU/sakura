@@ -267,11 +267,29 @@ header{
     background-color: #efefef;
   }
 
-
   .contact .iframe{
     height: 1350px;
     margin-top: 20px;
   }
+
+
+#contact_server_background{
+  position: fixed;
+  background-color: #000000be;
+  height: 100vh;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+}
+  #contact_server_info{
+    margin-top: auto;
+    margin-bottom: 0;
+    background-color: #fff;
+    height: 70vh;
+    min-width: 500px;
+  }
+
+
 
 footer{
   box-shadow: #d5d5d5 0px 0px 10px;
