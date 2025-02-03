@@ -296,11 +296,13 @@ header{
     width: 100%;
     max-width: 700px;
     border-radius: 25px 25px 0 0;
-    animation: points 1s ease forwards;
+
+    transform: translateY(70vh);
+    animation: contact_server_detail 0.75s ease forwards;
   }
-  @keyframes aaaa{
+  @keyframes contact_server_detail{
     to{
-      
+      transform: translateY(0);
     }
   }
     #contact_server_name{
@@ -311,17 +313,17 @@ header{
     #contact_server_about{
       height: calc(70vh - 2em);
       margin: 20px;
-      overflow-y: auto;
+      overflow-y: hidden;
     }
 
     #contact_server_btns{
       position: absolute;
       bottom: 0;
       width: 100%;
-      background-color: #ccc;
+      background-color: #ddd;
     }
       #contact_server_more{
-        background: linear-gradient(0, #ccc, #fff);
+        background: linear-gradient(0, #ddd, #fff);
         border: none;
         width: 100%;
         height: 3em;
@@ -338,7 +340,7 @@ header{
         text-align: center;
         padding: 0.25em 0;
         border-radius: 2em;
-        box-shadow: #bbb 0px 0px 10px;
+        box-shadow: #ccc 0px 0px 10px;
       }
       #contact_server_link div{
         background-color: #09f1e9;
@@ -358,8 +360,7 @@ header{
           padding: 0.5em 0;
         }
           #contact_server_back:hover{
-            box-shadow: #c5c5c5 0px 0px 10px;
-            background-color: #c5c5c5;
+            box-shadow: inset #cfcfcf 0px 0px 15px;
           }
 
 
