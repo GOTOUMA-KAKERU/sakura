@@ -5,6 +5,7 @@ function con_detail(element){
     .then(data => {
         data.forEach(item => {
             console.log(item.name);
+            document.getElementById("aaa").innerHTML = marked.parse(item.content);
         });
     })
     .catch(error => console.error("エラー:", error));

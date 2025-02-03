@@ -280,14 +280,40 @@ header{
   width: 100vw;
   bottom: 0;
   left: 0;
+  display: grid;
+  place-items: center;
 }
   #contact_server_info{
-    margin-top: auto;
-    margin-bottom: 0;
+    position: static;
+    margin-top: 30vh;
     background-color: #fff;
     height: 70vh;
-    min-width: 500px;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 25px 25px 0 0;
   }
+    #contact_server_name{
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 0;
+    }
+    #contact_server_about{
+      height: calc(70vh - 2em);
+      overflow-y: auto;
+    }
+    #contact_server_more{
+      position: absolute;
+      bottom: 60px;
+      background: linear-gradient(0, #efefef, #fff);
+      border: none;
+      width: 100%;
+      height: 3em;
+      text-align: center;
+      color: #444;
+    }
+    #contact_server_more:hover{
+      color: #ccc;
+    }
 
 
 
