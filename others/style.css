@@ -274,46 +274,93 @@ header{
 
 
 #contact_server_background{
+  display: none;
   position: fixed;
   background-color: #000000be;
   height: 100vh;
   width: 100vw;
   bottom: 0;
   left: 0;
-  display: grid;
   place-items: center;
 }
+  #contact_server_back_bg{
+    border: none;
+    background: none;
+    width: 100%;
+    height: 30vh;
+  }
   #contact_server_info{
     position: static;
-    margin-top: 30vh;
     background-color: #fff;
     height: 70vh;
     width: 100%;
     max-width: 700px;
     border-radius: 25px 25px 0 0;
+    animation: points 1s ease forwards;
+  }
+  @keyframes aaaa{
+    to{
+      
+    }
   }
     #contact_server_name{
       text-align: center;
       font-size: 2em;
-      margin-bottom: 0;
+      margin: 20px 20px 0 20px;
     }
     #contact_server_about{
       height: calc(70vh - 2em);
+      margin: 20px;
       overflow-y: auto;
     }
-    #contact_server_more{
+
+    #contact_server_btns{
       position: absolute;
-      bottom: 60px;
-      background: linear-gradient(0, #efefef, #fff);
-      border: none;
+      bottom: 0;
       width: 100%;
-      height: 3em;
-      text-align: center;
-      color: #444;
+      background-color: #ccc;
     }
-    #contact_server_more:hover{
-      color: #ccc;
-    }
+      #contact_server_more{
+        background: linear-gradient(0, #ccc, #fff);
+        border: none;
+        width: 100%;
+        height: 3em;
+        text-align: center;
+        color: #444;
+      }
+      #contact_server_more:hover{
+        color: #ccc;
+      }
+      #contact_server_btns div , #contact_server_back{
+        width: 80%;
+        margin: 1em auto;
+        max-width: 500px;
+        text-align: center;
+        padding: 0.25em 0;
+        border-radius: 2em;
+        box-shadow: #bbb 0px 0px 10px;
+      }
+      #contact_server_link div{
+        background-color: #09f1e9;
+      }
+        #contact_server_link{
+          text-decoration: none;
+          color: #000;
+        }
+          #contact_server_link div:hover{
+            background-color: #1bf0e9;
+            box-shadow: inset #08e2d8 0px 0px 5px;
+          }
+        #contact_server_back{
+          background: none;
+          border: none;
+          display: block;
+          padding: 0.5em 0;
+        }
+          #contact_server_back:hover{
+            box-shadow: #c5c5c5 0px 0px 10px;
+            background-color: #c5c5c5;
+          }
 
 
 
