@@ -1,0 +1,24 @@
+{
+  "servers": [
+    {
+        "server": "わどさば！",
+        "name": "wado"
+    },
+    {
+        "server": "らるもけ鯖",
+        "name": "raru"
+    },
+    {
+        "server": "DISCORD海軍",
+        "name": "disc"
+    },
+    {
+        "server": "そうだよ連合",
+        "name": "soud"
+    },
+    {
+        "server": "趣味総合学園",
+        "name": "syum"
+    }
+  ]
+}

@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', loadfinish);
 function loadfinish(){
-    
+    fetch("./contact_servers/servers.json") // JSON を取得
+    .then(response => response.json()) // JSON をオブジェクトに変換
+    .then(data => {
+        
+    })
+    .catch(error => console.error("エラー:", error));
 }
 
 function con_detail(element){
