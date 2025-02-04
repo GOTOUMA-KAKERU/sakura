@@ -271,6 +271,43 @@ header{
     height: 1350px;
     margin-top: 20px;
   }
+  .con_cards{
+    margin: 0 20px;
+    display: flex;
+  }
+    .con_card{
+      width: 300px;
+      box-shadow: #f1f1f1 0px 0px 10px;
+      border-radius: 10px;
+      padding: 10px;
+      display: block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .con_card div{
+      display: flex;
+    }
+    .con_card_h3{
+      overflow-x: hidden;
+      white-space: nowrap;
+    }
+    .con_card h3{
+      margin: 0.25em 0 0.5em 0;
+    }
+    .con_card_btn{
+      width: 280px;
+      margin: 10px;
+      text-align: center;
+      padding: 0.5em 0;
+      border-radius: 2em;
+      border: none;
+      box-shadow: #eee 0px 0px 10px;
+      background-color: #08e2d8;
+    }
+    .con_card_btn:hover{
+      background-color: #09f1e9;
+      box-shadow: none;
+    }
 
 
 #contact_server_background{
