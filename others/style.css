@@ -5,6 +5,10 @@ body,html{
     width: 100%;
 }
 
+header ul{
+  display: none;
+}
+
 .subtitle{
   text-align: center;
   margin: 0 0 20px 0;
