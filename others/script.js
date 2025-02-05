@@ -12,7 +12,6 @@ function loadfinish(){
                             <div class="con_card">
                     <div>
                         <h3 class="con_card_h3">${item.server}</h3>
-                        <h3 class="con_card_reader">…</h3>
                     </div>
                     <button onclick="con_detail(this);" class="con_card_btn" id="${item.name}">詳しく</button>
                 </div>
