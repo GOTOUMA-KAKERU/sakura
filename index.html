@@ -154,6 +154,27 @@
             </div>
         </div>
 
+        <div class="con_servers">
+            <h2 class="subtitle">連携鯖</h2>
+            <div id="con_cards" class="con_cards">
+                <!--ここにサーバー一覧が入る-->
+            </div>
+            <p>※反映に時間がかかる場合があります</p>
+        </div>
+        <!--ここから連携鯖の情報を映すHTML要素　javascriptでjson読んでみせている-->
+        <div id="contact_server_background">
+            <button id="contact_server_back_bg" onclick="back()"></button>
+            <div id="contact_server_info">
+                <h3 id="contact_server_name">仮鯖名</h3>
+                <div id="contact_server_about"></div>
+                <div id="contact_server_btns">
+                    <button id="contact_server_more">∨詳しく</button>
+                    <a id="contact_server_link" href=""><div>参加する</div></a>
+                    <button id="contact_server_back" onclick="back()">閉じる</button>
+                </div>
+            </div>
+        </div>
+
         <div class="links">
             <h2 class="subtitle">リンク</h2>
             <h3>Discord掲示板</h3>
@@ -205,27 +226,6 @@
                         <td><a href="https://sakura-zatudan-oukoku.jimdosite.com">https://sakura-zatudan-oukoku.jimdosite.com</a></td>
                     </tr>
                 </table>
-            </div>
-        </div>
-        <div class="con_servers">
-            <h2 class="subtitle">連携鯖様</h2>
-            <div id="con_cards" class="con_cards">
-                <!--ここにサーバー一覧が入る-->
-            </div>
-            <p>※反映に時間がかかる場合があります</p>
-        </div>
-
-        <!--ここから連携鯖の情報を映すHTML要素　javascriptでjson読んでみせている-->
-        <div id="contact_server_background">
-            <button id="contact_server_back_bg" onclick="back()"></button>
-            <div id="contact_server_info">
-                <h3 id="contact_server_name">仮鯖名</h3>
-                <div id="contact_server_about"></div>
-                <div id="contact_server_btns">
-                    <button id="contact_server_more">∨詳しく</button>
-                    <a id="contact_server_link" href=""><div>参加する</div></a>
-                    <button id="contact_server_back" onclick="back()">閉じる</button>
-                </div>
             </div>
         </div>
 
