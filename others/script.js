@@ -3,7 +3,21 @@ function loadfinish(){
     fetch("./contact_servers/servers.json") // JSON を取得
     .then(response => response.json()) // JSON をオブジェクトに変換
     .then(data => {
-        
+        data.forEach(item => {
+            item.server
+
+            const container = document.getElementById("con_cards"); // 挿入する親要素
+
+            container.innerHTML += `
+                            <div class="con_card">
+                    <div>
+                        <h3 class="con_card_h3">${item.server}</h3>
+                        <h3 class="con_card_reader">…</h3>
+                    </div>
+                    <button onclick="con_detail(this);" class="con_card_btn" id="${item.name}">詳しく</button>
+                </div>
+            `;
+        });
     })
     .catch(error => console.error("エラー:", error));
 }

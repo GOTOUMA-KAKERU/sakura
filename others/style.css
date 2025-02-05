@@ -272,8 +272,9 @@ header{
     margin-top: 20px;
   }
   .con_cards{
-    margin: 0 20px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
     .con_card{
       width: 300px;
