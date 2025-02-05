@@ -276,6 +276,9 @@ header{
     justify-content: center;
     flex-wrap: wrap;
   }
+  .con_servers p{
+    text-align: center;
+  }
     .con_card{
       width: 300px;
       box-shadow: #f1f1f1 0px 0px 10px;
