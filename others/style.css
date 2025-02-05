@@ -291,8 +291,6 @@ header{
     .con_card_h3{
       overflow-x: hidden;
       white-space: nowrap;
-    }
-    .con_card h3{
       margin: 0.25em 0 0.5em 0;
     }
     .con_card_btn{
