@@ -12,7 +12,6 @@ function loadfinish(){
                             <div class="con_card">
                     <div>
                         <h3 class="con_card_h3">${item.server}</h3>
-                        <h3 class="con_card_reader">…</h3>
                     </div>
                     <button onclick="con_detail(this);" class="con_card_btn" id="${item.name}">詳しく</button>
                 </div>
@@ -34,10 +33,11 @@ function con_detail(element){
     .then(response => response.json()) // JSON をオブジェクトに変換
     .then(data => {
         contact_about.innerHTML = "";
-            console.log(data.name);
             contact_name.textContent = data.name;
-            contact_about.insertAdjacentHTML("beforeend", marked.parse(data.content));
-            console.log(marked.parse(data.content));
+            data.description.forEach(item => {
+            contact_about.insertAdjacentHTML("beforeend", marked.parse(item));
+            });
+            contact_link.href = data.join;
     })
     .catch(error => console.error("エラー:", error));
 
