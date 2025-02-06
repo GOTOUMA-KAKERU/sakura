@@ -25,9 +25,27 @@ body,html{
     color: #08e2d8;
     border-bottom: solid #08e2d8 2px;
   }
-  .menu_ul_2 li{
+  .menu_ul_2{
     display: none;
   }
+  .menu_ul_1 button:hover ~ .menu_ul_2{
+    display: block;
+  }
+  .menu_ul_2{
+    padding: 0 10px 10px 10px;
+    width: fit-content;
+    border-radius: 0 0 1em 1em;
+    background-color: #fff;
+    list-style: none;
+    box-shadow: #c8c8c8 0px 10px 10px;
+  }
+  .menu_ul_2 li{
+    padding: 0.5em 0;
+  }
+    .menu_ul_2 li a{
+      text-decoration: none;
+      color: #08e2d8;
+    }
 
 
 .subtitle{
