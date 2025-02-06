@@ -15,20 +15,28 @@
             <h1><img src="./others/title.png" alt="logo"></h1>
 
             <div class="menu">
-                <ul>
+                <ul class="menu_ul_1">
                     <li>
-                        <ul>
-                            <p>情報</p>
+                        <button onclick="menu('info')">情報</button>
+                        <ul id="info">
                             <li><a href="#news">お知らせ</a></li>
                             <li><a href="#info">鯖情報</a></li>
                             <li><a href="#contact">お問い合わせ</a></li>
                         </ul>
                     </li>
                     <li>
-                        <p>メンバー</p>
-                        <ul>
+                        <button onclick="menu('member')">メンバー</button>
+                        <ul id="member">
                             <li><a href="#member">メンバーリスト</a></li>
                             <li><a href="#manege">運営陣</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="menu('links')">リンク</button>
+                        <ul id="links">
+                            <li><a href="#contact">連携鯖</a></li>
+                            <li><a href="#board">掲示板</a></li>
+                            <li><a href="#other">他公式サイト</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -188,11 +196,11 @@
         <div id="contact_server_background">
             <button id="contact_server_back_bg" onclick="back()"></button>
             <div id="contact_server_info">
-                <h3 id="contact_server_name">仮鯖名</h3>
-                <div id="contact_server_about"></div>
+                <h3 id="contact_server_name">取得エラー</h3>
+                <div id="contact_server_about">データ取得エラー<br>もう一度お試しください</div>
                 <div id="contact_server_btns">
                     <button id="contact_server_more">∨詳しく</button>
-                    <a id="contact_server_link" href=""><div>参加する</div></a>
+                    <a id="contact_server_link"><div>参加する</div></a>
                     <button id="contact_server_back" onclick="back()">閉じる</button>
                 </div>
             </div>

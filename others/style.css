@@ -5,8 +5,15 @@ body,html{
     width: 100%;
 }
 
-header ul{
+
+.menu{
   display: none;
+}
+.menu ul{
+  display: flex;
+}
+  .menu_ul_1{
+    list-style: none;
 }
 
 .subtitle{
@@ -165,7 +172,7 @@ header{
     background-color: #0bded7;
     box-shadow: #e7e7e7 0px 0px 10px;
     padding: 10px 20vw;
-    border-radius: 10px;
+    border-radius: 2em;
     width: fit-content;
     margin: 50px auto;
   }
