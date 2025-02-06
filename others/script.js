@@ -1,3 +1,4 @@
+//連携鯖一覧をservers.jsonから読み込む
 document.addEventListener('DOMContentLoaded', loadfinish);
 function loadfinish(){
     fetch("./contact_servers/servers.json") // JSON を取得
@@ -21,6 +22,7 @@ function loadfinish(){
     .catch(error => console.error("エラー:", error));
 }
 
+//連携鯖の詳細を取得
 function con_detail(element){
     var contact_background = document.getElementById('contact_server_background');
     var contact_name = document.getElementById("contact_server_name");
@@ -43,6 +45,7 @@ function con_detail(element){
 
 }
 
+//連携鯖の詳細を閉じる
 function back(){
     var contact_detail = document.getElementById('contact_server_background');
     contact_detail.style.display = "none";
