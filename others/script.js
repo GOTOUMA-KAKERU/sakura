@@ -22,6 +22,26 @@ function loadfinish(){
     .catch(error => console.error("エラー:", error));
 }
 
+//document.getElementById("menu_button").addEventListener("mouseover", menu);
+function menu(e){
+    var menu_bg = document.getElementById("menu");
+    var menu_close = document.getElementById("menu_blackout");
+
+    if(e == "close"){
+        menu_bg.classList.add("menu_show");
+        menu_close.classList.add("menu_show_bg");
+        console.log("close");
+    }
+
+    if (menu_bg.classList.contains("menu_show")) {
+        menu_bg.classList.remove("menu_show");
+        menu_close.classList.remove("menu_show_bg");
+    } else {
+        menu_bg.classList.add("menu_show");
+        menu_close.classList.add("menu_show_bg");
+    }
+}
+
 //連携鯖の詳細を取得
 function con_detail(element){
     var contact_background = document.getElementById('contact_server_background');

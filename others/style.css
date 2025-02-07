@@ -5,6 +5,16 @@ body,html{
     width: 100%;
 }
 
+
+.menu_blackout{
+  display: none;
+}
+.menu_button{
+  display: none;
+}
+  .menu img{
+    display: none;
+  }
   .menu_ul_1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -90,7 +100,7 @@ body,html{
 header{
   height: 50px;
   display: grid;
-  grid-template-columns: 200px 1fr 100px;
+  grid-template-columns: 200px 1fr;
   box-shadow: #d8d8d8 0px 0px 5px;
   background-color: #fff;
   position: fixed;
@@ -108,6 +118,10 @@ header{
     margin-left: 10px;
   }
 
+  .menu_all{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+  }
   .join{
     margin: 5px 10px 5px 10px;
     height: 30px;
@@ -470,12 +484,66 @@ footer p{
   header{
     display: flex;
   }
-  .join{
-    margin-left: auto;
-  }
-  .menu{
+  .menu_all{
     display: none;
   }
+  .menu_button{
+    margin: 0 10px 0 auto;
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+    .menu_button img{
+      height: 40px;
+      width: 40px;
+    }
+
+  .menu_show_bg{
+    display: block;
+    position: absolute;
+    width: 100vw;
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+    background-color: #656565aa;
+    border: none;
+  }
+  .menu_show{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: #fff;
+    height: 100vh;
+    width: fit-content;
+    box-shadow: #8e8e8ef1 0px 20px 20px;
+    overflow-y: auto;
+
+    transform: translateX(200px);
+    animation: menu_in 0.75s ease forwards;
+  }
+  @keyframes menu_in{
+    to{
+      transform: translateX(0);
+    }
+  }
+  .menu_show img{
+    display: block;
+    width: 80px;
+    margin: 10px auto 0 auto;
+    border-radius: 20px;
+  }
+  .menu_show ul{
+    display: block;
+    box-shadow: none;
+  }
+  .menu_show .join{
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+
+
   .top{
     display: flex;
     flex-direction: column-reverse;
