@@ -31,13 +31,16 @@ body,html{
   .menu_ul_1 button:hover ~ .menu_ul_2{
     display: block;
   }
+  .menu_ul_2:hover{
+    display: block;
+  }
   .menu_ul_2{
     padding: 0 10px 10px 10px;
-    width: fit-content;
-    border-radius: 0 0 1em 1em;
+    width: 150px;
+    border-radius: 0 0 0.5em 0.5em;
     background-color: #fff;
     list-style: none;
-    box-shadow: #c8c8c8 0px 10px 10px;
+    box-shadow: #eeeeeeee 0px 10px 10px;
   }
   .menu_ul_2 li{
     padding: 0.5em 0;
@@ -45,6 +48,11 @@ body,html{
     .menu_ul_2 li a{
       text-decoration: none;
       color: #08e2d8;
+      display: block;
+      width: 100%;
+    }
+    .menu_ul_2 li a:hover{
+      color: #1bf0e9;
     }
 
 
