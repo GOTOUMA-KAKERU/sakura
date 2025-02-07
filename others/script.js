@@ -26,19 +26,22 @@ function loadfinish(){
 function menu(e){
     var menu_bg = document.getElementById("menu");
     var menu_close = document.getElementById("menu_blackout");
+    var menu_button = document.getElementById("menu_button_img");
 
     if(e == "close"){
         menu_bg.classList.add("menu_show");
         menu_close.classList.add("menu_show_bg");
-        console.log("close");
+        menu_button.src = "./others/menu.svg";
     }
 
     if (menu_bg.classList.contains("menu_show")) {
         menu_bg.classList.remove("menu_show");
         menu_close.classList.remove("menu_show_bg");
+        menu_button.src = "./others/menu.svg";
     } else {
         menu_bg.classList.add("menu_show");
         menu_close.classList.add("menu_show_bg");
+        menu_button.src = "./others/close.svg";
     }
 }
 
