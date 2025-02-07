@@ -45,6 +45,21 @@ function con_detail(element){
 
 }
 
+function server_more(){
+    var contact_back = document.getElementById("contact_server_back_bg");
+    var contact_info = document.getElementById("contact_server_info");
+    var contact_about = document.getElementById("contact_server_about");
+    var contact_more = document.getElementById("contact_server_more");
+    var contact_btns = document.getElementById("contact_server_btns");
+
+    contact_back.style.height = 0;
+    contact_info.style.height = "calc(100vh - 70px)";
+    contact_more.style.display = "none";
+    contact_about.style.overflowY = "scroll";
+    contact_btns.style.backgroundColor = "#fff";
+
+}
+
 //連携鯖の詳細を閉じる
 function back(){
     var contact_detail = document.getElementById('contact_server_background');
