@@ -6,6 +6,29 @@ body,html{
 }
 
 
+#loading{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  #loading img{
+    width: min(30vw, 30vh);
+    height: auto;
+    border-radius: 20px;
+    animation: loading 1s ease-in-out;
+  }
+  @keyframes loading {
+    from{
+        transform: scale(0.5);
+    }
+  }
+
+
 .menu_blackout{
   display: none;
 }
@@ -158,9 +181,8 @@ header{
   margin: 0;
   padding: 0;
 
-  opacity: 0;
-  transform: translateY(50px);
-  animation: slideIn 2s ease forwards;
+  transform: translateY(75px);
+  animation: slideIn 3s ease forwards;
 }
 
 .top h2{
@@ -169,9 +191,8 @@ header{
     margin: 0;
     padding: 0;
 
-    opacity: 0;
-    transform: translateY(50px);
-    animation: slideIn 2s ease forwards;
+    transform: translateY(75px);
+    animation: slideIn 3s ease forwards;
 }
 .top img{
     right: 0;
@@ -180,14 +201,13 @@ header{
     margin: calc(45vh - 150px) 5vw;
     border-radius: 20px;
 
-    transform: translateX(150px);
+    transform: translateX(200px);
     display: inline-block;
-    animation: slideIn 2s ease forwards;
+    animation: slideIn 3s ease forwards;
 }
 
 @keyframes slideIn {
     to {
-     opacity: 1;
      transform: translateY(0);
      transform: translateX(0);
    }
@@ -207,7 +227,7 @@ header{
   .about img {
     max-width: 200px;
     max-height: 200px;
-    margin: auto 20px;
+    margin: auto 0 auto 20px;
     animation: a_img 3s ease forwards;
     animation-timeline: view();
   }
