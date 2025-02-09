@@ -1,6 +1,14 @@
 //連携鯖一覧をservers.jsonから読み込む
 document.addEventListener('DOMContentLoaded', loadfinish);
 function loadfinish(){
+    // 1秒後にフラグを立てる
+    setTimeout(() => {
+        timeoutComplete = true;
+        if (loadComplete) {
+            loaded();
+        }
+    }, 1300);
+
     fetch("./contact_servers/servers.json") // JSON を取得
     .then(response => response.json()) // JSON をオブジェクトに変換
     .then(data => {
@@ -20,6 +28,19 @@ function loadfinish(){
         });
     })
     .catch(error => console.error("エラー:", error));
+
+    
+    // ページロード完了時
+    window.onload = () => {
+        loadComplete = true;
+        if (timeoutComplete) {
+            loaded();
+        }
+    };
+}
+function loaded(){
+    document.getElementById("loading").style.opacity = "0";
+    document.getElementById("loading").style.display = "none";
 }
 
 //document.getElementById("menu_button").addEventListener("mouseover", menu);
