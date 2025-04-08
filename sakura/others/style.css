@@ -1,5 +1,17 @@
+.zen-maru-gothic-regular {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 html,body{
     margin: 0;
+    background-color: #f3feff;
+    font: 100% "Zen Maru Gothic", sans-serif;
+}
+p{
+  color: #555;
 }
 
 header{
@@ -38,8 +50,8 @@ header img{
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    font-family: monospace;
     font-size: 2em;
+    color: #000;
   }
    
   @keyframes typing {
@@ -54,6 +66,32 @@ header img{
     }
   }
   
+.about{
+    display: flex;
+    align-items: flex-start;
+}
+.about img{
+  width: 500px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.about div{
+  margin: 10px;
+}
+
+.howtojoin{
+  margin: 10px;
+}
+.howtojoin h3{
+  text-align: center;
+  font-size: 2em;
+}
+
+.onlinetime div{
+  height: 90vh;
+  width: calc(100% - 20px);
+  margin: 10px;
+}
 
 footer{
     margin: 0 10px;
