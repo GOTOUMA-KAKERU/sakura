@@ -241,6 +241,26 @@ header{
    }
   }
 
+  #forsakuracraft{
+    text-decoration: none;
+    color: #000;
+    margin: 10px calc(50vw - 150px) 50px  calc(50vw - 150px);
+    width: 300px;
+    display: inline-block;
+  }
+  #forsakuracraft div{
+    border-radius: 20px;
+    background-color: #1fe5ff;
+    padding: 10px;
+    display: flex;
+  }
+  #forsakuracraft div:hover{
+    background-color: #3fe9ff;
+  }
+  #forsakuracraft div img{
+    border-radius: 10%;
+  }
+
   .about span{
     color: #e04375;
   }
