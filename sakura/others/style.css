@@ -48,7 +48,7 @@ header img{
     justify-content: center;
   }
 .cachecopy{
-    width: 23ch;
+    width: 7ch;
     animation: typing 3s steps(23), effect .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
