@@ -13,6 +13,11 @@ html,body{
 p{
   color: #555;
 }
+hr{
+  margin: auto 20px;
+  border: none;
+  border-top: 2px solid #c7e2e0;
+}
 
 header{
     padding: 10px;
@@ -69,6 +74,7 @@ header img{
 .about{
     display: flex;
     align-items: flex-start;
+    margin-bottom: 30px;
 }
 .about img{
   width: 500px;
@@ -87,6 +93,36 @@ header img{
   font-size: 2em;
 }
 
+
+.joinstap{
+  border-left: #208335 solid 2px;
+  width: calc(100% -30px);
+  margin: 0 15px;
+}
+.joinstap div{
+  display: flex;
+}
+.joinstapnum{
+  position: relative;
+  left: -15px;
+  top: -5px;
+  width: 1em;
+  height:1em;
+  line-height:1em;
+  padding: 10px;
+  background-color: #c7e2e0;
+  border-radius: 50%;
+  border: #f3feff solid 10px;
+}
+.joinstap h4{
+  position: relative;
+  top: -5px;
+  margin: 0;
+  height: calc(1em + 20px);
+  line-height: calc(1em + 20px);
+}
+
+
 .onlinetime div{
   height: 90vh;
   width: calc(100% - 20px);
@@ -97,4 +133,13 @@ footer{
     margin: 0 10px;
     border-top: #ddd solid 2px;
     text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  .about{
+    display: block;
+  }
+  .about img{
+    width: calc(100% - 20px);
+  }
 }
