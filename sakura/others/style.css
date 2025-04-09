@@ -52,12 +52,12 @@ header img{
     height: 90vh;
 }
 .cachecopy{
-    width: 12em;
-    animation: typing 2s steps(12), effect .5s step-end infinite alternate;
+    width: 9em;
+    animation: typing 2s steps(9), effect .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #000;
   }
    
