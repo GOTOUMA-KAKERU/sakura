@@ -12,6 +12,7 @@ html,body{
 }
 p{
   color: #555;
+  margin: 0;
 }
 hr{
   margin: auto 20px;
@@ -28,6 +29,7 @@ header{
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 header h1{
     line-height: 60px;
@@ -95,31 +97,42 @@ header img{
 
 
 .joinstap{
-  border-left: #208335 solid 2px;
   width: calc(100% -30px);
   margin: 0 15px;
 }
-.joinstap div{
+.joinhead{
   display: flex;
 }
 .joinstapnum{
-  position: relative;
-  left: -15px;
-  top: -5px;
   width: 1em;
   height:1em;
   line-height:1em;
   padding: 10px;
   background-color: #c7e2e0;
   border-radius: 50%;
-  border: #f3feff solid 10px;
+  z-index: 0;
 }
 .joinstap h4{
-  position: relative;
-  top: -5px;
-  margin: 0;
-  height: calc(1em + 20px);
-  line-height: calc(1em + 20px);
+  margin: 2px 0 2px 10px;
+  font-size: 1.25em;
+}
+.joins{
+  margin: 10px 10px 0 50px;
+}
+.joins a{
+  display: block;
+  text-decoration: none;
+  background: linear-gradient(90deg ,#befafa ,#7effff);
+  color: #000;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+  width: calc(100% - 40px);
+  max-width: 600px;
+  border-radius: 10px;
+}
+.joins a:hover{
+  background: linear-gradient(90deg ,#d4ffff ,#99ffff);
 }
 
 
