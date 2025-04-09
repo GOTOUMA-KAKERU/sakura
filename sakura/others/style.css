@@ -88,7 +88,7 @@ header img{
 }
 
 .howtojoin{
-  margin: 10px;
+  margin: 10px 10px 30px 10px;
 }
 .howtojoin h3{
   text-align: center;
@@ -108,7 +108,7 @@ header img{
   height:1em;
   line-height:1em;
   padding: 10px;
-  background-color: #c7e2e0;
+  background-color: #afe2e2;
   border-radius: 50%;
   z-index: 0;
 }
@@ -133,6 +133,17 @@ header img{
 }
 .joins a:hover{
   background: linear-gradient(90deg ,#d4ffff ,#99ffff);
+}
+.joins img{
+  width: calc(100% - 20px);
+  max-width: 500px;
+  border-radius: 10px;
+}
+.joins h5{
+  font-size: 1.2em;
+  background: linear-gradient(90deg ,#99ffff ,#befafa);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 
