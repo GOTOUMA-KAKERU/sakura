@@ -155,4 +155,7 @@ footer{
   .about img{
     width: calc(100% - 20px);
   }
+  .cachecopy{
+    font-size: 1.5em;
+  }
 }
