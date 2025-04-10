@@ -147,6 +147,44 @@ header img{
 }
 
 
+.adminer{
+  margin: 10px;
+}
+.adminer h3{
+  text-align: center;
+  font-size: 2em;
+}
+.adminers{
+  display: flex;
+}
+.adminers_card{
+  width: calc(100% - 20px);
+  max-width: 500px;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(90deg ,#d1ffff ,#b0fcfc);
+  display: flex;
+  margin: 10px;
+}
+.adminers_card img{
+  width: 300px;
+  height: 300px;
+}
+.adminers_card h4{
+  font-size: 1.25em;
+}
+.adminers_card div div p{
+  background-color: #ddd;
+  padding: 0.1em 0.25em;
+  border-radius: 5px;
+  display: inline;
+}
+
+.onlinetime h3{
+  text-align: center;
+  margin: 30px 0;
+  font-size: 1.5em;
+}
 .onlinetime div{
   height: 90vh;
   width: calc(100% - 20px);
