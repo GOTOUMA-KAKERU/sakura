@@ -99,12 +99,14 @@
 
         <div class="adminer">
             <h3>運営メンバー</h3>
-            <div class="adminers">
+            <button id="adminersview">運営陣を非表示▼</button>
+            <div class="adminers" id="adminers">
                 <div class="adminers_card">
                     <img src="./others/adminers/kakeru.png" alt="kakeru">
                     <div>
                         <h4>架流さん</h4>
                         <div>
+                            <p>鯖主</p>
                             <p>Java版</p>
                             <p>統合版</p>
                         </div>
@@ -117,10 +119,36 @@
                     <div>
                         <h4>はと</h4>
                         <div>
+                            <p>さ雑国鯖主</p>
                             <p>Java版</p>
                         </div>
                         <p>さくら雑談王国の鯖主。<br>
                             運営陣のトップ。</p>
+                    </div>
+                </div>
+                <div class="adminers_card">
+                    <img src="./others/adminers/kakeru.png" alt="kakeru">
+                    <div>
+                        <h4>わたあめえ</h4>
+                        <div>
+                            <p>副鯖主</p>
+                            <p>統合版</p>
+                        </div>
+                        <p>さくら雑談王国の副鯖主。<br>
+                            サーバー管理と管理職、どっちもできる。</p>
+                    </div>
+                </div>
+                <div class="adminers_card">
+                    <img src="./others/adminers/kakeru.png" alt="kakeru">
+                    <div>
+                        <h4>イルミナ</h4>
+                        <div>
+                            <p>熟練者</p>
+                            <p>統合版</p>
+                            <p>Java版</p>
+                        </div>
+                        <p>攻略が運営陣の中で一番速い。<br>
+                            鯖立てて一日目でいつの間にかダイヤフル装備持ってた。</p>
                     </div>
                 </div>
             </div>
@@ -139,8 +167,6 @@
             <p>2025 ©kakeru</p>
             <p>Powered by SAKURA-Talk-Kingdum</p>
         </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/10.0.0/marked.min.js"></script>
-
         <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
         <script>
             //Show image in full-screen on click.
@@ -160,6 +186,20 @@
                 }).click(function () {
                     $(this).remove();
                 }).appendTo('body');
+            });
+            const button = document.getElementById('adminersview');
+            const item = document.getElementById('adminers');
+
+            button.addEventListener('click', () => {
+            if (item.style.display === 'none') {
+                // 非表示なら表示する
+                item.style.display = 'block';
+                button.textContent = "運営陣を非表示▼";
+            } else {
+                // 表示されているなら非表示にする
+                item.style.display = 'none';
+                button.textContent = "運営陣を表示▲";
+            }
             });
             </script>
     </body>

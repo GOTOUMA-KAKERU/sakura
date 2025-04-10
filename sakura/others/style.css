@@ -154,16 +154,28 @@ header img{
   text-align: center;
   font-size: 2em;
 }
+#adminersview{
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  font: inherit;
+}
+#adminersview:hover{
+  background-color: #ffffffaa;
+}
 .adminers{
   display: flex;
+  flex-wrap: wrap;
 }
 .adminers_card{
-  width: calc(100% - 20px);
-  max-width: 500px;
+  width: 450px;
+  max-width: calc(100% - 20px);
   border-radius: 10px;
   padding: 10px;
   background: linear-gradient(90deg ,#d1ffff ,#b0fcfc);
   display: flex;
+  flex-grow: 1;
   margin: 10px;
 }
 .adminers_card img{
