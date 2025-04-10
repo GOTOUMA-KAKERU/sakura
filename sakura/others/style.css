@@ -186,6 +186,10 @@ header img{
 .adminers_card h4{
   font-size: 1.25em;
 }
+.adminers_card h4 span{
+  font-size: 0.7em;
+  color: #555;
+}
 .adminers_card div div p{
   background-color: #ddd;
   padding: 0.1em 0.25em;
